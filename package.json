@@ -1,0 +1,53 @@
+{
+  "name": "@hm-soft/korean-validators",
+  "version": "0.1.0",
+  "description": "한국 주민등록번호·사업자등록번호·법인등록번호·전화번호·우편번호 검증/포맷 유틸 (체크섬 포함)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "korea",
+    "korean",
+    "validator",
+    "주민등록번호",
+    "사업자등록번호",
+    "법인등록번호",
+    "rrn",
+    "brn",
+    "phone",
+    "postal-code",
+    "hmsoft"
+  ],
+  "author": "HMSOFT",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongmuk/hm-soft-korean-validators.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hongmuk/hm-soft-korean-validators/issues"
+  },
+  "homepage": "https://github.com/hongmuk/hm-soft-korean-validators#readme"
+}
